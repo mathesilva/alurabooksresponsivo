@@ -1,0 +1,107 @@
+.rodape{
+    background-color: var(--branco);
+    text-align: center;
+    padding: 2em 2em;
+}
+.rodape__titulo{
+    color: var(--azul);
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+}
+.rodape__texto{
+    color: var(--azul-rodape);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    padding: 1em;
+}
+.banner__rodape{
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+}
+.banner__rodape::placeholder{
+    font-family: var(--font-principal);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--azul);
+    background: url(../assets/Email.svg) no-repeat;
+    
+}
+.rodape-alura{
+    background-color: var(--branco);
+    color: black;
+    padding: 1em;
+    font-size: 16px;
+}
+hr{
+    margin: 0;
+}
+.lista-rodape{
+    display: none;
+}
+
+    @media screen and (min-width: 1024px) {
+        .rodape {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .rodape__titulo {
+            font-size: 24px;
+        }
+    
+        .contato__descricao{
+            margin-right: 1em;
+            width: 30%;
+        }
+    
+        .contato__email {
+            width: 30%;
+        }
+        .banner__rodape{
+            width: 30%;
+        }
+        .rodape__texto{
+            font-size: 16px;
+        }
+        .rodape-alura{
+            display: flex;
+            justify-content: space-around;
+        }
+        .lista__rodape-item{
+            display: flex;
+            align-items: center;
+        }
+        .lista__rodape-link{
+            text-decoration: none;
+            color: var(--cinza);
+            margin: 1em;
+        }
+        .lista__rodape-titulo{
+            margin-bottom: 1em;
+            color: var(--cinza-titulo);
+        }
+        .lista-rodape{
+            display: block;
+        }
+
+    }
+
+    @media screen and(min-width:1728px) {
+        .rodape{
+            padding: 3em 20vw;
+        }
+        .lista-rodape{
+            border-left: 1px solid var(--cinza-titulo);
+            padding-left: 1em;
+        }
+        .rodape-alura{
+            padding: 3em 0;
+        }
+
+
+    }
